@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '5'
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: ./scripts/deploy.sh
+  'on':
+    branch: master
+    node: '5'
+env:
+  global:
+    - secure: >-
+        Aw9Kqbjhu7ssDFQdEGQlBv35ZXOpMP0wssjVlYl00rKzHcAT8RzlnEQUrq2J99wfVfyoSMKd+KVXjEZe3Hx00Pd0ZkCBXHvAFjSbQcD24UM/1RFZGGekgfaZWPbufWL5X5bhuUFjTFouq3lRJZBygx+KYGITHUwB9AOpBEyDWkwOu3Krw9Dz5Mg7zy634nnLZBKi55WksxrGnCe55JPC1yX01AKkGi3jyWJh2bIV5jgBtunF0lB38yvuWUrmQHpa/dsLLFkHoP1G23/KUlDFBSLUaUptnAS55VwjBTTRz8QUmAnS8lW0xdRZ/cfb4H8nk80drJb/UMkrEBuymeeBAOvKbypB/2QcgPisopw/xp74KPT30GpOrI9LsGzYH3zk27WbvE1hcCF/xiNBjzsgzZBmxqiyM4bYKLAdmm3EjPaazyqLsShVwT53fdLLOWHBcuhSILhONlIMWy0o5HWnNspMc+TLnwgDmToVoIEn9uaRms4o9ID0a4QLmMTxDCK7RgF8oi+rqrp3eadvxtPU45WUQfbeslLJ2EXUy5O3s8km1HZKsCoYTN1SyqB/Ob113AGu5UnYDv6+lfSfJpEOG7ZsDDHeKiwBrLVC1aMMo+ryJaUvvP+8UxycCq2x3I2ZaN/wABJ429r2FM0gj7hKpYLvA6YjmUb3HuZBEGXYrJ0=
+    - GIT_DEPLOY_REPO=https://$GITHUB_TOKEN@github.com/ak-fish/vibrant.git

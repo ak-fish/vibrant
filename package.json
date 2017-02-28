@@ -3,7 +3,7 @@
   "name": "node-vibrant-website",
   "homepage": "http://ak.fish/vibrant",
   "twitter": "",
-  "repository": "",
+  "repository": "https://github.com/ak-fish/vibrant.git",
   "scripts": {
     "postinstall": "cd node-vibrant && npm install",
     "lint:js": "eslint --ignore-path .gitignore --fix .",
