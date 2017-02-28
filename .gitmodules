@@ -1,0 +1,4 @@
+[submodule "node-vibrant"]
+	path = node-vibrant
+	url = https://github.com/akfish/node-vibrant.git
+	branch = develop
