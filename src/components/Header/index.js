@@ -17,6 +17,20 @@ const Header = (props, { metadata: { pkg } }) => (
         >
           { "Home" }
         </Link>
+        <Link
+          className={ styles.link }
+          to={ "docs" }
+        >
+          { "Docs" }
+        </Link>
+        <Link
+          className={ styles.link }
+          to={ "playground" }
+        >
+          { "Play" }
+        </Link>
+
+
       </div>
       <div className={ styles.navPart2 }>
         {
@@ -32,7 +46,7 @@ const Header = (props, { metadata: { pkg } }) => (
         {
           pkg.repository &&
           <a
-            href={ pkg.repository }
+            href={ pkg.displayRepository || pkg.repository }
             className={ styles.link }
           >
             <Svg svg={ gitHubSvg } cleanup />

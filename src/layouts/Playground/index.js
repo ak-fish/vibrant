@@ -2,11 +2,12 @@ import React from "react"
 
 import Page from "../Page"
 
-const Homepage = (props) => {
+const Playground = (props) => {
   return (
     <Page { ...props }>
+        TODO: playground
     </Page>
   )
 }
 
-export default Homepage
+export default Playground

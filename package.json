@@ -4,8 +4,9 @@
   "homepage": "http://ak.fish/vibrant",
   "twitter": "",
   "repository": "https://github.com/ak-fish/vibrant.git",
+  "displayRepository": "https://github.com/akfish/node-vibrant.git",
   "scripts": {
-    "postinstall": "cd node-vibrant && npm install",
+    "postinstall": "cd node-vibrant && npm install && cp ./node-vibrant/README.md ./content/docs.md",
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",
     "lint": "npm-run-all --parallel lint:*",
